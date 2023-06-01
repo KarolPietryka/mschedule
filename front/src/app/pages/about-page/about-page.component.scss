@@ -1,0 +1,16 @@
+.paper {
+  width: 21cm; // A4 width
+  min-height: 29.7cm; // A4 height
+  padding: 2cm; // Add some padding so the text isn't right up against the edge
+  margin: auto; // Center the page on screen
+  background: white; // Paper color
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); // Add a shadow effect
+}
+
+.paper h1 {
+  // Style your header however you want
+}
+
+.paper p {
+  // Style your paragraph text however you want
+}
