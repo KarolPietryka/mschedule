@@ -5,14 +5,16 @@ import { SchedulerPage } from './scheduler-page/scheduler-page.component';
 import { HomePage } from './home-page/home-page.component';
 
 @NgModule({
+  exports: [
+    AboutPage,
+  ],
   declarations: [
     AboutPage,
     SchedulerPage,
     HomePage
   ],
   imports: [
-    CommonModule,
-    PagesModule
+    CommonModule
   ]
 })
 export class PagesModule { }
