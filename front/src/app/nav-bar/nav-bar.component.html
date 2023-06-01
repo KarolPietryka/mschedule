@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" 
+    (mouseover)="toggleNavbar()" 
+    (mouseout)="toggleNavbar()"
+    [@growShrink]="navbarState" >
+    <button mat-icon-button
+    [matMenuTriggerFor] = "menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" >
+        <button mat-menu-item>About me</button>
+        <button mat-menu-item>Scheduler</button>
+    </mat-menu>
+    <span>Karol Pietryka - Software Developer</span>
+</mat-toolbar>
