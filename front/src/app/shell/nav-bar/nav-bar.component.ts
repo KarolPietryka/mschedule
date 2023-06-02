@@ -21,6 +21,19 @@ export class NavBar implements OnInit {
 
   @ViewChild('menu') menu: MatMenu;
 
+  public quotes: string[] = [
+    "Driven by curiosity and coffee.", 
+    "Design pattern orthodox.",
+    "Dogs lover, hate frogs - but Pepe gets a pass.",
+    "Disciple of Robert C. Martin's clean code philosophy.",
+    "Reading Napoleon biography for fun.",
+    "On a quest to master the enigmatic world of Haskell.",
+    "Black Sabbath is best band ever. Ready to defend this stance.",
+    "Unapologetically opinionated about the pineapple-on-pizza debate."];
+  public currentQuote: string = this.quotes[0];
+  private quoteIndex: number = 0;
+
+
   navbarState = 'shrink';
 
   constructor() { }
@@ -30,6 +43,10 @@ export class NavBar implements OnInit {
   }
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.quoteIndex = (this.quoteIndex + 1) % this.quotes.length;
+      this.currentQuote = this.quotes[this.quoteIndex];
+    }, 6000);
   }
 
 
