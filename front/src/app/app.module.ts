@@ -3,15 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { ShellComponent } from './shell/shell.component';
+import { ShellModule } from './shell/shell.module';
 @NgModule({
   declarations: [
-    AppComponent,
-    NavBarComponent,
-    ShellComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +16,8 @@ import { ShellComponent } from './shell/shell.component';
     RouterModule,
     //
     SharedModule,
-    PagesModule
+    PagesModule,
+    ShellModule
   ],
   providers: [],
   bootstrap: [AppComponent]

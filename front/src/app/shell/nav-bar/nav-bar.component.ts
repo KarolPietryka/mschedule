@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { MatMenu } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 'nav-bar',
@@ -16,7 +17,7 @@ import { MatMenu } from '@angular/material/menu';
     ]
   )]
 })
-export class NavBarComponent implements OnInit {
+export class NavBar implements OnInit {
 
   @ViewChild('menu') menu: MatMenu;
 
