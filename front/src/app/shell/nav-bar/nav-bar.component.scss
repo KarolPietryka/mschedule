@@ -1,3 +1,10 @@
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
