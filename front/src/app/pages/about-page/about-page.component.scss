@@ -3,14 +3,34 @@
   min-height: 29.7cm; // A4 height
   padding: 2cm; // Add some padding so the text isn't right up against the edge
   margin: auto; // Center the page on screen
-  background: white; // Paper color
+  //background: #faf3e0; // Paper color
+  background: #07002b;
+  //background: #d7eaf7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); // Add a shadow effect
+  color: white;
 }
 
-.paper h1 {
-  // Style your header however you want
+.section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 400px;
+  align-items: center;
 }
 
-.paper p {
-  // Style your paragraph text however you want
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-image {
+  flex: 0 0 50%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.section-content {
+  flex: 1;
 }

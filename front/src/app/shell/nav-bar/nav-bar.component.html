@@ -1,18 +1,28 @@
 <mat-toolbar color="primary" 
     class="sticky-navbar"
+    style="background-image: url('../../../assets/baner.png'); 
+            background-size: cover;
+            background-position: center;
+            background-color: #04001e;
+            background-size: contain;
+            background-repeat: no-repeat;"
     (mouseover)="toggleNavbar()" 
     (mouseout)="toggleNavbar()"
     [@growShrink]="navbarState" >
-    <button mat-icon-button
-    [matMenuTriggerFor] = "menu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu" >
-        <button mat-menu-item routerLink="/about">About me</button>
-        <!-- <button mat-menu-item routerLink="/career">Career objectives</button> -->
-    </mat-menu>
-    <div class="navbar-text">
-        <span>Karol Pietryka - Software Developer</span>
-        <span class="quote">{{currentQuote}}</span>
+    <div class="navbar-elements">
+        <button mat-icon-button
+        [matMenuTriggerFor] = "menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" >
+            <button mat-menu-item routerLink="/about">About me</button>
+            <!-- <button mat-menu-item routerLink="/career">Career objectives</button> -->
+        </mat-menu>
+        <div class="navbar-text">
+            <div class="tag-title">
+                Turning Coffee into Code Since 2017 | Java & Kotlin Certified Dev | Proficient Full Stack Dev | Design Patterns Orthodox | BPM Expert | Alfresco Wizard
+            </div>
+            <span class="quote">{{currentQuote}}</span>
+        </div>
     </div>
 </mat-toolbar>

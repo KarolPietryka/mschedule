@@ -9,8 +9,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   styleUrls: ['./nav-bar.component.scss'],
   animations: [
     trigger('growShrink', [
-      state('grow', style({ height: '80px', backgroundColor: '#2b91d9' })),//gray
-      state('shrink', style({ height: '60px', backgroundColor: '#686a6b' })),//blue
+      state('grow', style({ height: '180px', /*backgroundColor: '#2b91d9'*/ })),//gray
+    state('shrink', style({ height: '160px', /*backgroundColor: '#686a6b'*/ })),//blue
       transition('grow <=> shrink', [
         animate('0.5s ease-in-out')
       ])
