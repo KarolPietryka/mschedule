@@ -1,6 +1,11 @@
-<kp-tail
-    [title]="'Projects'"
-    [desc]="'Test description'"
-    [imgUrl]="'../../../assets/projects.png'"
-    [clickRoute]="'/projects'"
-></kp-tail>
+<div class="container">
+  <div class="pair" *ngFor="let pair of tiles">
+      <kp-tail 
+          *ngFor="let tile of pair" 
+          [title]="tile.title" 
+          [desc]="tile.desc"
+          [imgUrl]="tile.imgUrl"
+          [clickRoute]="tile.clickRoute">
+      </kp-tail>
+  </div>
+</div>

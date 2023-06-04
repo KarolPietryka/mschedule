@@ -1,3 +1,12 @@
-.test {
-  background-image: url("../../../assets/projects.png");
+.container {
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pair {
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  margin: 0 auto;
 }
