@@ -8,6 +8,7 @@ import { ProjectsPage } from './projects-page/projects-page.component';
 import { CareerPage } from './career-page/career-page.component';
 import { DownloadsPage } from './downloads-page/downloads-page.component';
 import { BlogPage } from './blog-page/blog-page.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   exports: [
@@ -24,7 +25,8 @@ import { BlogPage } from './blog-page/blog-page.component';
   ],
   imports: [
     CommonModule,
-    PagesComponentsModule
+    PagesComponentsModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

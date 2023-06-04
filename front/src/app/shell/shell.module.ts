@@ -6,18 +6,21 @@ import { SharedModule } from '../shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ShellComponent } from './shell.component';
 import { RouterModule } from '@angular/router';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 
 @NgModule({
   exports: [
     NavBar,
     ShellComponent,
-    Footer
+    Footer,
+    SideBarComponent
   ],
   declarations: [
     NavBar,
     ShellComponent,
     Footer,
+    SideBarComponent
   ],
   imports: [
     CommonModule,
