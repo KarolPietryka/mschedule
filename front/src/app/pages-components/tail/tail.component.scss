@@ -16,8 +16,12 @@
 
 .tail-img {
   cursor: pointer;
+  border-radius: 15px !important;
 }
 
+mat-card-actions button {
+  background-color: #282537;
+}
 .example-header-image {
   background-image: url("../../../assets/KP_circle.png");
   background-size: cover;
@@ -25,4 +29,9 @@
 
 .example-card:hover {
   transform: scale(1.05);
+}
+
+mat-card {
+  border: 1px solid white;
+  border-radius: 15px;
 }
