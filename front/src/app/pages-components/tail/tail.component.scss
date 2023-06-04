@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 10px;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+  //background-color: #04001e;
+  background-color: #07002b;
+  color: white;
+}
+
+.tail-img {
+  cursor: pointer;
+}
+
+.example-header-image {
+  background-image: url("../../../assets/KP_circle.png");
+  background-size: cover;
+}
+
+.example-card:hover {
+  transform: scale(1.05);
+}
