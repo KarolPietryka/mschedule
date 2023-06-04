@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'kp-tail',
@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tail implements OnInit {
 
-title: String = "test Title";
-desc: String;
-imgUrl: String;
+  @Input() title: String;
+  @Input() desc: String;
+  @Input() imgUrl: String;
+  @Input() clickRoute: String;
 
   constructor() { 
-    this.imgUrl = '../../../assets/Blog.png'
   }
 
   ngOnInit(): void {

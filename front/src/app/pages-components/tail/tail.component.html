@@ -5,7 +5,9 @@
         <mat-card-title>{{title}}</mat-card-title>
         <mat-card-subtitle>SubTitle</mat-card-subtitle>
       </mat-card-header> -->
-      <img mat-card-image class="tail-img" src="{{imgUrl}}" alt="Photo of {{title}}">
+      <a [routerLink]="[clickRoute]">
+        <img mat-card-image class="tail-img" src="{{imgUrl}}" alt="Photo of {{title}}">
+      </a>
       <mat-card-content>
         <p>desc</p>
       </mat-card-content>
