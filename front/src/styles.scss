@@ -7,8 +7,10 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #04001e;
+  background-color: var(--background-main-theme);
 }
 :root {
-  --background-main-theme: #07002b;
+  --background-element-theme: #07002b;
+  --background-main-theme: #04001e;
+  --zoom-hover: transform 0.3s ease-in-out;
 }
