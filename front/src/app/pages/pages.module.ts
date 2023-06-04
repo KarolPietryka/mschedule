@@ -4,6 +4,10 @@ import { AboutPage } from './about-page/about-page.component';
 import { SchedulerPage } from './scheduler-page/scheduler-page.component';
 import { HomePage } from './home-page/home-page.component';
 import { PagesComponentsModule } from '../pages-components/pages-components.module';
+import { ProjectsPage } from './projects-page/projects-page.component';
+import { CareerPage } from './career-page/career-page.component';
+import { DownloadsPage } from './downloads-page/downloads-page.component';
+import { BlogPage } from './blog-page/blog-page.component';
 
 @NgModule({
   exports: [
@@ -12,7 +16,11 @@ import { PagesComponentsModule } from '../pages-components/pages-components.modu
   declarations: [
     AboutPage,
     SchedulerPage,
-    HomePage
+    HomePage,
+    ProjectsPage,
+    CareerPage,
+    DownloadsPage,
+    BlogPage
   ],
   imports: [
     CommonModule,
