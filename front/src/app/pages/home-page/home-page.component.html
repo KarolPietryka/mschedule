@@ -1,6 +1,6 @@
 <div class="container">
   <div class="pair" *ngFor="let pair of tiles">
-      <kp-tail 
+      <kp-tail [ngClass]="{'no-pair-tile': pair.length === 1}"
           *ngFor="let tile of pair" 
           [title]="tile.title" 
           [desc]="tile.desc"

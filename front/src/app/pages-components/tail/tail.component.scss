@@ -5,13 +5,11 @@
 }
 
 .example-card {
-  max-width: 400px;
-  margin: 10px;
-  width: 80%;
+  margin: 30px;
   transition: transform 0.3s ease-in-out;
-  //background-color: #04001e;
   background-color: #07002b;
   color: white;
+  flex: 1;
 }
 
 .tail-img {
