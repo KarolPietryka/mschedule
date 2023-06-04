@@ -7,7 +7,7 @@
 .example-card {
   margin: 30px;
   transition: transform 0.3s ease-in-out;
-  background-color: #07002b;
+  background-color: var(--background-main-theme);
   color: white;
   flex: 1;
 }
