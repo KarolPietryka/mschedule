@@ -1,15 +1,3 @@
-.paper {
-  width: 21cm; // A4 width
-  min-height: 29.7cm; // A4 height
-  padding: 2cm; // Add some padding so the text isn't right up against the edge
-  margin: auto; // Center the page on screen
-  //background: #faf3e0; // Paper color
-  background: var(--background-element-theme);
-  //background: #d7eaf7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); // Add a shadow effect
-  color: white;
-}
-
 .section {
   display: flex;
   gap: 20px;
