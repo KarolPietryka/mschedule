@@ -1,34 +1,7 @@
 
-<div class="section">
-  <img class="section-image" src='../../../assets/KP_circle.png' alt="Description">
-  <div class="section-content">
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
+  <div *ngFor="let square of content">
+    <kp-square-story-line
+    [squareComponents] = square>
+    </kp-square-story-line>
   </div>
-</div>
-<div class="section reverse">
-  <img class="section-image" src="../../../assets/KP_gh.png" alt="Description">
-  <div class="section-content">
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-  </div>
-</div>
-<div class="section">
-  <img class="section-image" src="../../../assets/KP_gh.png" alt="Description">
-  <div class="section-content">
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-    SECTION TEXT
-  </div>
-</div>
+

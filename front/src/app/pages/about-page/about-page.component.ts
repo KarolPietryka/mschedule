@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SquareStoryLineComponentPair } from 'src/app/model/page-components/suqre-component-pair.model';
 
 @Component({
   selector: 'about-page',
@@ -7,6 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPage implements OnInit {
 
+  content: SquareStoryLineComponentPair[][] = [
+    [
+      {
+        imgUrl: '../../../assets/KP_circle.png',
+        text:" TEset"
+      },
+      {
+        imgUrl: '../../../assets/KP_circle.png',
+        text:" TEset"
+      }
+    ],
+    [
+      {
+        imgUrl: '../../../assets/KP_circle.png',
+        text:" TEset"
+      }
+    ]
+  ]
   constructor() { }
 
   ngOnInit(): void {
