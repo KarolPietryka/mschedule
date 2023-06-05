@@ -4,4 +4,10 @@
   height: 100vh; /* This makes sure that your sidebar takes the full height of the viewport */
   overflow-y: auto; /* This ensures that your sidebar scrolls if the content is taller than the viewport */
   background-color: var(--background-main-theme);
+  color: var(--text-color);
+}
+
+.example-header-image {
+  background-image: url("../../../assets/KP_circle.png");
+  background-size: cover;
 }
