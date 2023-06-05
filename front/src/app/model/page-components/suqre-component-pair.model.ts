@@ -1,4 +1,5 @@
 export interface SquareStoryLineComponentPair{
     imgUrl: String,
-    text: String
+    title: String,
+    desc: String
 }

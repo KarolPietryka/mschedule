@@ -1,22 +1,30 @@
-<div class="section">
-    <img class="section-image" src='{{squareComponents[0]?.imgUrl}}'>
-    <div class="section-content">
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-    </div>
+<div class="row">
+  <img class="row-image" src='{{squareComponents[0]?.imgUrl}}'>
+  <div class="row-content">
+    <mat-card class="content-card">
+      <mat-card-header>
+        <div mat-card-avatar class="row-content-card-header-image"></div>
+        <mat-card-title>{{squareComponents[0].title}}</mat-card-title>
+        <mat-card-subtitle>SubTitle</mat-card-subtitle>
+      </mat-card-header>
+        <mat-card-content>
+            <p>{{squareComponents[0].desc}}</p>
+          </mat-card-content>
+    </mat-card>
   </div>
-  <div *ngIf='squareComponents[1] != undefined' class="section reverse">
-    <img class="section-image" src='{{squareComponents[1]?.imgUrl}}'>
-    <div class="section-content">
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-      SECTION TEXT
-    </div>
+</div>
+<div *ngIf='squareComponents[1] != undefined' class="row reverse">
+  <img class="row-image" src='{{squareComponents[1]?.imgUrl}}'>
+  <div class="row-content">
+    <mat-card class="content-card">
+      <mat-card-header>
+        <div mat-card-avatar class="row-content-card-header-image"></div>
+        <mat-card-title>{{squareComponents[1].title}}</mat-card-title>
+        <mat-card-subtitle>SubTitle</mat-card-subtitle>
+      </mat-card-header>
+        <mat-card-content>
+            <p>{{squareComponents[0].desc}}</p>
+          </mat-card-content>
+    </mat-card>
   </div>
+</div>

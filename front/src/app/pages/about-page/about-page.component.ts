@@ -12,17 +12,20 @@ export class AboutPage implements OnInit {
     [
       {
         imgUrl: '../../../assets/KP_circle.png',
-        text:" TEset"
+        title:" TEset",
+        desc: "DESC"
       },
       {
         imgUrl: '../../../assets/KP_circle.png',
-        text:" TEset"
+        title:" TEset",
+        desc: "DESC"
       }
     ],
     [
       {
         imgUrl: '../../../assets/KP_circle.png',
-        text:" TEset"
+        title:" TEset",
+        desc: "DESC"
       }
     ]
   ]

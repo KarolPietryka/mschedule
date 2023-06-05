@@ -10,7 +10,6 @@ export class SquareStoryLineComponent implements OnInit {
 
   @Input() squareComponents: SquareStoryLineComponentPair[];
   constructor() { 
-    console.log("IN")
   }
 
   ngOnInit(): void {
