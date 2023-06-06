@@ -21,29 +21,21 @@ export class HomePage implements OnInit {
           imgUrl: '../../../assets/home/tiles/career.png',
           clickRoute: '/career'
       }
-  ],
-  [
-      {
-          title: 'About me',
-          desc: 'Test description3',
-          imgUrl: '../../../assets/home/tiles/about.png',
-          clickRoute: '/about'
-      },
+    ],
+    [
       {
           title: 'Downloads',
           desc: 'Test description4',
           imgUrl: '../../../assets/home/tiles/downloads.png',
           clickRoute: '/downloads'
-      }
-  ],
-  [
+      },
       {
         title: 'Blog',
         desc: 'test',
         imgUrl: '../../../assets/home/tiles/blog.png',
         clickRoute: '/blog'
       }
-  ]
+    ]
   ]
   constructor() { }
 
