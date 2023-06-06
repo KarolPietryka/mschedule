@@ -6,8 +6,12 @@
   align-items: center;
   height: 400px;
   align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
 }
-
+.row img {
+  width: 50%;
+}
 .row.reverse {
   flex-direction: row-reverse;
 }
@@ -30,7 +34,20 @@
   color: var(--text-color);
 }
 
+mat-card-title:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .row-content-card-header-image {
   background-image: url("../../../assets/KP_circle.png");
   background-size: cover;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--text-color);
+  text-decoration: none;
 }
