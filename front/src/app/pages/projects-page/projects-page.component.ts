@@ -18,7 +18,7 @@ export class ProjectsPage implements OnInit {
         url: "https://github.com/KarolPietryka/mschedule"
       },
       {
-        imgUrl: '../../../assets/projects/LeetCode_logo_rvs.png',
+        imgUrl: '../../../assets/projects/leetcode.png',
         title:"LeetCode | CCI | Dojo",
         desc: " I launched the Dojo project to strengthen my proficiency in data structures and algorithms. I later extended my practice to LeetCode, tackling complex programming challenges that honed my problem-solving skills and command over algorithmic efficiency. In tandem, I developed the CCI project to gain hands-on experience with Hibernate, Test-Driven Development (TDD), and Java Persistence API (JPA), enhancing my proficiency in the Java ecosystem.",
         avatarImageUrl: "../../../assets/projects/github-thumbnail.png",
