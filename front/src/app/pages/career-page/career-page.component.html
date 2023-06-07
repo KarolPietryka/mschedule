@@ -1,1 +1,18 @@
-<p>career-page works!</p>
+<div class="card">
+    <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-event>
+            <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
+                <i [ngClass]="event.icon" class="icon"></i>
+            </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-event>
+            <p-card class ="p-card" [header]="event.status" [subheader]="event.date">
+                <img *ngIf="event.image" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image" [alt]="event.name" width="200" class="shadow-2" />
+                <p style="text-align: left;">
+                   {{event.value}}
+                </p>
+                <!-- <button pButton label="Read more" class="p-button-text"></button> -->
+            </p-card>
+        </ng-template>
+    </p-timeline>
+</div>
