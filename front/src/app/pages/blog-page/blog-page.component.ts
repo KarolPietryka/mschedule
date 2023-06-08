@@ -12,7 +12,13 @@ export class BlogPage implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.dialog.open(OkDialogComponent, {
+    const dialogData = {
+      header: 'Work in progress',
+      content: 'When something interesting happens, I feel the pressure to update this section of my blog with captivating content.'
+    };
+
+    const dialogRef = this.dialog.open(OkDialogComponent, {
+      data: dialogData,
       panelClass: 'blur-dialog-panel'
     });
   }

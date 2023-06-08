@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { OkDialogComponent } from 'src/app/pages-components/ok-dialog/ok-dialog.component';
 
 @Component({
   selector: 'downloads-page',
@@ -11,5 +13,4 @@ export class DownloadsPage implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
