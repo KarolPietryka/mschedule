@@ -5,7 +5,6 @@ import { HomePage } from './home-page/home-page.component';
 import { PagesComponentsModule } from '../pages-components/pages-components.module';
 import { ProjectsPage } from './projects-page/projects-page.component';
 import { CareerPage } from './career-page/career-page.component';
-import { DownloadsPage } from './downloads-page/downloads-page.component';
 import { BlogPage } from './blog-page/blog-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { TimelineModule } from 'primeng/timeline';
@@ -20,7 +19,6 @@ import { CardModule } from 'primeng/card';
     HomePage,
     ProjectsPage,
     CareerPage,
-    DownloadsPage,
     BlogPage,
   ],
   imports: [
