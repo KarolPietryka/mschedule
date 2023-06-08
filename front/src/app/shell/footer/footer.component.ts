@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'kp-footer',
@@ -10,7 +10,7 @@ import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/
 export class Footer implements OnInit {
 
   constructor(iconLibrary: FaIconLibrary) {
-    iconLibrary.addIcons(faFacebookF, faTwitter, faLinkedinIn, faInstagram);
+    iconLibrary.addIcons(faLinkedinIn, faGithub);
   }
   ngOnInit(): void {
   }
