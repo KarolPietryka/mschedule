@@ -1,8 +1,9 @@
 <div class="container">
     <mat-card class="example-card">
-      <a [routerLink]="[clickRoute]">
-        <img mat-card-image class="tail-img img-radios" src="{{imgUrl}}" alt="Photo of {{title}}">
-      </a>
+        <img mat-card-image class="tail-img img-radios" 
+          src="{{imgUrl}}"
+          alt="Photo of {{title}}"
+          (click)="tileClicked()">
       <mat-card-content>
         <p>desc</p>
       </mat-card-content>
