@@ -1,9 +1,11 @@
 <div class="test">
     <h1 mat-dialog-title>Hi</h1>
-    <div mat-dialog-content>
-        <p>What's your favorite animal?</p>
-    </div>
+    <p>e-mail: {{personInfo.email}}</p>
+    <p>tel:
+        <span *ngFor="let tel of personInfo.tels">{{tel}}</span>
+    </p>
+    <p>gitHub: {{personInfo.gitHub}}</p>
     <div mat-dialog-actions>
-        <button mat-button (click)="onOkClick">Ok</button>
+        <button mat-button (click)="onOkClick()">Ok</button>
     </div>
 </div>

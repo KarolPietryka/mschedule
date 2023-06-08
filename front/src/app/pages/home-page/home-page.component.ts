@@ -32,7 +32,14 @@ export class HomePage implements OnInit {
           title: 'Downloads',
           desc: 'Test description4',
           imgUrl: '../../../assets/home/tiles/downloads.png',
-          clickCommand: new TileDialog(this.dialog, this.tileClickContext)
+          clickCommand: new TileDialog(
+            this.dialog,
+            {
+              email: "karol.jaroslaw.pietryka@gmail.com",
+              tels: ["+48 508 442 599"],
+              gitHub: "https://github.com/KarolPietryka"
+            },
+            this.tileClickContext)
       },
       {
         title: 'Blog',
