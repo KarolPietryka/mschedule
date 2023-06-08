@@ -11,12 +11,10 @@ export class TileDialog extends AbstractTileClickCommand{
         super(context);
     }
     public execute() {
-       
-      
-          const dialogRef = this.dialog.open(PersonInfoDialog, {
-            panelClass:'dialog',
-            backdropClass: 'dialog-blur'
-          });
+        const dialogRef = this.dialog.open(PersonInfoDialog, {
+        panelClass:'dialog',
+        backdropClass: 'dialog-blur'
+        });
     }
 
 }
