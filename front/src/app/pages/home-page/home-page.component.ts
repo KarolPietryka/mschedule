@@ -16,13 +16,13 @@ export class HomePage implements OnInit {
     [
       {
           title: 'Projects',
-          desc: 'Test description1',
+          desc: 'Check Out My Coding Projects: A Collection of Minor Projects',
           imgUrl: '../../../assets/home/tiles/projects.png',
           clickCommand: new RouteToPageCommand("/projects", this.tileClickContext)
       },
       {
           title: 'Career',
-          desc: 'Test description2',
+          desc: 'My Career in Code: A Glimpse into the Timeline of My Work.',
           imgUrl: '../../../assets/home/tiles/career.png',
           clickCommand: new RouteToPageCommand("/career", this.tileClickContext)
       }
@@ -30,7 +30,7 @@ export class HomePage implements OnInit {
     [
       {
           title: 'Contact',
-          desc: 'Test description4',
+          desc: "Let's Get in Touch: Reach Out to Discuss Coding, Projects, and More.",
           imgUrl: '../../../assets/home/tiles/contact.png',
           clickCommand: new TileDialog(
             this.dialog,
@@ -44,7 +44,7 @@ export class HomePage implements OnInit {
       },
       {
         title: 'Blog',
-        desc: 'test',
+        desc: 'Share My Thoughts: Explore My Programming Insights on My Blog.',
         imgUrl: '../../../assets/home/tiles/blog.png',
         clickCommand: new RouteToPageCommand("/blog", this.tileClickContext)
       }

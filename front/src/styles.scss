@@ -6,7 +6,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Source Code Pro", monospace !important;
   background-color: var(--background-main-theme);
 }
 :root {
@@ -33,4 +33,9 @@ a:hover,
 a:active {
   color: var(--text-color);
   text-decoration: none;
+}
+
+p {
+  // font-family: "Source Code Pro", monospace !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
