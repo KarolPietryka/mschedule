@@ -26,3 +26,11 @@ body {
 .dialog-blur {
   backdrop-filter: blur(8px);
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--text-color);
+  text-decoration: none;
+}

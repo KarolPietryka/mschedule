@@ -1,10 +1,18 @@
 <div class="test">
     <h1 mat-dialog-title>Hi</h1>
-    <p>e-mail: {{personInfo.email}}</p>
-    <p>tel:
-        <span *ngFor="let tel of personInfo.tels">{{tel}}</span>
+    <p>
+        <mat-icon>email</mat-icon> e-mail:  {{ personInfo.email }}
     </p>
-    <p>gitHub: {{personInfo.gitHub}}</p>
+    <p>
+        <mat-icon>phone</mat-icon> tel: <br>
+        <span *ngFor="let tel of personInfo.tels">
+            <span style="margin-left: 30px;"> {{ tel }}</span> <br>
+        </span>
+    </p>
+    <p>
+        <i class="fab fa-github fa-2x"></i> GitHub: 
+        <a href="{{ personInfo.githubUrl }}" target="_blank"> {{ personInfo.githubText }}</a>
+    </p>
     <div mat-dialog-actions>
         <button mat-button (click)="onOkClick()">Ok</button>
     </div>
