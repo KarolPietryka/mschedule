@@ -38,7 +38,9 @@ export class HomePage implements OnInit {
               email: "karol.jaroslaw.pietryka@gmail.com",
               tels: ["+48 508 442 599"],
               githubText: "Karol Pietryka - GitHub",
-              githubUrl: "https://github.com/KarolPietryka"
+              githubUrl: "https://github.com/KarolPietryka",
+              linkedInText: "Karol Pietryka -LinkeIn",
+              linkedInUrl: "https://www.linkedin.com/in/karol-pietryka/"
             },
             this.tileClickContext)
       },

@@ -3,4 +3,6 @@ export interface PersonInfoData{
     tels: string[],
     githubText: string,
     githubUrl: string
+    linkedInText: string,
+    linkedInUrl: string
 }
