@@ -18,3 +18,11 @@ body {
 .img-radios {
   border-radius: 15px !important;
 }
+
+.dialog .mat-dialog-container {
+  color: white;
+  background-color: var(--background-element-theme);
+}
+.dialog-blur {
+  backdrop-filter: blur(8px);
+}

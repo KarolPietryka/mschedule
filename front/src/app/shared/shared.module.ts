@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatCardModule } from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     FontAwesomeModule,
     MatCardModule,
     MatExpansionModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule
   ],
   declarations: [],
   imports: []

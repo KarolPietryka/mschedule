@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { RouteToPageCommand } from 'src/app/model/page-components/tile/cmd/impl/route-to-page.command';
+import { TileDialog } from 'src/app/model/page-components/tile/cmd/impl/tile-dialog.command';
 import { TileClickContext } from 'src/app/model/page-components/tile/cmd/tile-click.context';
 import { TileModel } from 'src/app/model/page-components/tile/tile.model';
 
@@ -30,7 +32,7 @@ export class HomePage implements OnInit {
           title: 'Downloads',
           desc: 'Test description4',
           imgUrl: '../../../assets/home/tiles/downloads.png',
-          clickCommand: new RouteToPageCommand("/career", this.tileClickContext)
+          clickCommand: new TileDialog(this.dialog, this.tileClickContext)
       },
       {
         title: 'Blog',
@@ -40,7 +42,9 @@ export class HomePage implements OnInit {
       }
     ]
   ]
-  constructor(private tileClickContext: TileClickContext){}
+  constructor(
+    private tileClickContext: TileClickContext,
+    private dialog: MatDialog){}
 
   ngOnInit(): void {
   }

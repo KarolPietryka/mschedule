@@ -5,6 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { SquareStoryLineComponent } from './square-story/square-story.component';
 import { OkDialogComponent } from './ok-dialog/ok-dialog.component';
+import { PersonInfoDialog } from './person-info-dialog/person-info-dialog.component';
 
 
 
@@ -16,7 +17,8 @@ import { OkDialogComponent } from './ok-dialog/ok-dialog.component';
   declarations: [
     Tail,
     SquareStoryLineComponent,
-    OkDialogComponent
+    OkDialogComponent,
+    PersonInfoDialog
   ],
   imports: [
     CommonModule,
