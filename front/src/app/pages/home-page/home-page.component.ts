@@ -29,9 +29,9 @@ export class HomePage implements OnInit {
     ],
     [
       {
-          title: 'Downloads',
+          title: 'Contact',
           desc: 'Test description4',
-          imgUrl: '../../../assets/home/tiles/downloads.png',
+          imgUrl: '../../../assets/home/tiles/contact.png',
           clickCommand: new TileDialog(
             this.dialog,
             {
