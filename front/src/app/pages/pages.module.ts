@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SchedulerPage } from './scheduler-page/scheduler-page.component';
 import { HomePage } from './home-page/home-page.component';
 import { PagesComponentsModule } from '../pages-components/pages-components.module';
 import { ProjectsPage } from './projects-page/projects-page.component';
@@ -15,7 +14,6 @@ import { CardModule } from 'primeng/card';
   exports: [
   ],
   declarations: [
-    SchedulerPage,
     HomePage,
     ProjectsPage,
     CareerPage,

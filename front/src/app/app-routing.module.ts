@@ -5,7 +5,6 @@ import { BlogPage } from './pages/blog-page/blog-page.component';
 import { CareerPage } from './pages/career-page/career-page.component';
 import { HomePage } from './pages/home-page/home-page.component';
 import { ProjectsPage } from './pages/projects-page/projects-page.component';
-import { SchedulerPage } from './pages/scheduler-page/scheduler-page.component';
 import { ShellComponent } from './shell/shell.component';
 
 const routes: Routes = [
