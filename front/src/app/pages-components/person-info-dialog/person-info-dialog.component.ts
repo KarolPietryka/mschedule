@@ -9,6 +9,7 @@ import { PersonInfoData } from 'src/app/model/person/person-info-data.model';
 })
 export class PersonInfoDialog implements OnInit {
 
+  showCopiedMessage: boolean = false;
   
   constructor(
     @Inject(MAT_DIALOG_DATA) public personInfo: PersonInfoData,
@@ -19,5 +20,14 @@ export class PersonInfoDialog implements OnInit {
 
   onOkClick(): void {
     this.dialogRef.close(); 
+  }
+
+  copyToClipboard(text: string): void {
+    navigator.clipboard.writeText(text).then(() => {
+      this.showCopiedMessage = true;
+      setTimeout(() => {
+          this.showCopiedMessage = false;
+      }, 1000); // Display "Copied" message for 1 second (1000 milliseconds)
+    });
   }
 }

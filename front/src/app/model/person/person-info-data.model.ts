@@ -1,6 +1,6 @@
 export interface PersonInfoData{
-    email: String,
-    tels: String[],
-    githubText: String,
-    githubUrl: String
+    email: string,
+    tels: string[],
+    githubText: string,
+    githubUrl: string
 }

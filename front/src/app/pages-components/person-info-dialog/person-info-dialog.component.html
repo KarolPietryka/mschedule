@@ -1,7 +1,11 @@
-<div class="test">
-    <h1 mat-dialog-title>Hi</h1>
+<div class="container">
+    <h1 mat-dialog-title>Contact info</h1>
     <p>
         <mat-icon>email</mat-icon> e-mail:  {{ personInfo.email }}
+        <button mat-icon-button (click)="copyToClipboard(personInfo.email)">
+            <mat-icon style="cursor: pointer;">content_copy</mat-icon>
+        </button> 
+        <span *ngIf="showCopiedMessage">Copied</span>
     </p>
     <p>
         <mat-icon>phone</mat-icon> tel: <br>

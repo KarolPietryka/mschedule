@@ -16,7 +16,8 @@ export class TileDialog extends AbstractTileClickCommand{
         const dialogRef = this.dialog.open(PersonInfoDialog, {
         data: this.personInfo,
         panelClass:'dialog',
-        backdropClass: 'dialog-blur'
+        backdropClass: 'dialog-blur',
+        minWidth: "440px"
         });
     }
 

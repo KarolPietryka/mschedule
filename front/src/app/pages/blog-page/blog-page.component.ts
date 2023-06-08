@@ -20,7 +20,8 @@ export class BlogPage implements OnInit {
 
     const dialogRef = this.dialog.open(OkDialogComponent, {
       data: dialogData,
-      // panelClass: 'blur-dialog-panel'
+      panelClass:'dialog',
+      backdropClass: 'dialog-blur'
     });
   }
 
