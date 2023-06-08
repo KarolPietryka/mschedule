@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { OkDialogComponent } from 'src/app/pages-components/ok-dialog/ok-dialog.component';
 
 @Component({
   selector: 'blog-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPage implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.dialog.open(OkDialogComponent, {
+      panelClass: 'blur-dialog-panel'
+    });
   }
 
 }

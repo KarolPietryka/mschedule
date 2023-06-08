@@ -4,17 +4,19 @@ import { Tail } from './tail/tail.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { SquareStoryLineComponent } from './square-story/square-story.component';
+import { OkDialogComponent } from './ok-dialog/ok-dialog.component';
 
 
 
 @NgModule({
   exports: [
     Tail,
-    SquareStoryLineComponent
+    SquareStoryLineComponent,
   ],
   declarations: [
     Tail,
-    SquareStoryLineComponent
+    SquareStoryLineComponent,
+    OkDialogComponent
   ],
   imports: [
     CommonModule,
