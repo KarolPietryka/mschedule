@@ -1,0 +1,18 @@
+version: "2.1"
+services:
+  kp-port:
+    container_name: kp-port
+    image: karoljpietryka/kp_port:1.1.0
+    ports:
+      - "80:80"
+      - "443:443"
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    environment:
+      TZ: Europe/Warsaw
+    volumes:
+      # - ./nginx-ssl.conf:/etc/nginx/nginx.conf
+      # - ./kp-port.crt:/etc/nginx/ssl/kp-port.crt
+      # - ./kp-port.key:/etc/nginx/ssl/kp-port.key
+      - ./nginx-ssl.conf:/etc/nginx/nginx.conf
