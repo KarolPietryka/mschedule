@@ -5,7 +5,7 @@ services:
     image: karoljpietryka/kp_port:1.1.0
     ports:
       - "80:80"
-      - "443:443"
+      # - "443:443"
     build:
       dockerfile: ./Dockerfile
       context: ./
@@ -15,4 +15,4 @@ services:
       # - ./nginx-ssl.conf:/etc/nginx/nginx.conf
       # - ./kp-port.crt:/etc/nginx/ssl/kp-port.crt
       # - ./kp-port.key:/etc/nginx/ssl/kp-port.key
-      - ./nginx-ssl.conf:/etc/nginx/nginx.conf
+      - ./nginx.conf:/etc/nginx/nginx.conf
