@@ -36,7 +36,7 @@ export class ProjectsPage implements OnInit {
       {
         imgUrl: '../../../assets/projects/oca.png',
         title:"Java SE 8 Programmer",
-        desc: " I launched the Dojo project to strengthen my proficiency in data structures and algorithms. I later extended my practice to LeetCode, tackling complex programming challenges that honed my problem-solving skills and command over algorithmic efficiency. In tandem, I developed the CCI project to gain hands-on experience with Hibernate, Test-Driven Development (TDD), and Java Persistence API (JPA), enhancing my proficiency in the Java ecosystem.",
+        desc: "Achieving the Java SE 8 Programmer Certification was a great moment in my software development journey. The process strengthened my fundamental knowledge of Java and its core APIs, enhancing my approach to software development. This certification, a long-time goal of mine, stands as an industry-recognized testament to my skills. It represents not just a project, but a major step in my commitment to ongoing professional growth",
         avatarImageUrl: "../../../assets/projects/oca_thumb.png",
         url: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D6FAD93B67B81F54E9D147556054C19A82092D8A374086320D378F7C6A913B67"
       }
