@@ -17,7 +17,7 @@ export class TileDialog extends AbstractTileClickCommand{
         data: this.personInfo,
         panelClass:'dialog',
         backdropClass: 'dialog-blur',
-        minWidth: "440px"
+        minWidth: "340px"
         });
     }
 

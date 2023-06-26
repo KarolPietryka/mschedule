@@ -1,28 +1,37 @@
 <div class="container">
     <h1 mat-dialog-title>Contact info</h1>
-    <p>
-        <mat-icon>email</mat-icon> e-mail:  {{ personInfo.email }}
-        <button mat-icon-button (click)="copyToClipboard(personInfo.email)">
-            <mat-icon style="cursor: pointer;">content_copy</mat-icon>
-        </button> 
-        <span *ngIf="showCopiedMessage">Copied</span>
-    </p>
-    <p>
-        <mat-icon>phone</mat-icon> tel: <br>
-        <span *ngFor="let tel of personInfo.tels">
-            <span style="margin-left: 30px;"> {{ tel }}</span> <br>
-        </span>
-    </p>
     <div class="extend">
         <p>
-            <i class="fab fa-github fa-2x"></i> GitHub: 
-            <a href="{{ personInfo.githubUrl }}" target="_blank"> {{ personInfo.githubText }}</a>
+            <mat-icon>email</mat-icon> e-mail:<br>
+                <span style="margin-left: 30px;"> {{ personInfo.email }}</span>
+            <!-- <button mat-icon-button (click)="copyToClipboard(personInfo.email)">
+                <mat-icon style="cursor: pointer;">content_copy</mat-icon>
+            </button>  -->
+            <span *ngIf="showCopiedMessage">Copied</span>
         </p>
     </div>
     <div class="extend">
         <p>
-            <i class="fa-brands fa-linkedin-in fa-2x"></i> LinkedIn:
-            <a href="{{ personInfo.linkedInUrl }}" target="_blank"> {{ personInfo.linkedInText }}</a>
+            <mat-icon>phone</mat-icon> tel: <br>
+            <span *ngFor="let tel of personInfo.tels">
+                <span style="margin-left: 30px;"> {{ tel }}</span> <br>
+            </span>
+        </p>
+    </div>
+    <div class="extend">
+        <p>
+            <i class="fab fa-github fa-2x"></i> GitHub: <br>
+            <span style="margin-left: 30px;"> 
+                <a href="{{ personInfo.githubUrl }}" target="_blank"> {{ personInfo.githubText }}</a>
+            </span>
+        </p>
+    </div>
+    <div class="extend">
+        <p>
+            <i class="fa-brands fa-linkedin-in fa-2x"></i> LinkedIn: <br>
+            <span style="margin-left: 30px;"> 
+                <a href="{{ personInfo.linkedInUrl }}" target="_blank"> {{ personInfo.linkedInText }}</a>
+            </span>
         </p>
     </div>
     <div mat-dialog-actions>
